@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build hello world",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-o",
+                "./libs/Container/examples/resolveAll/resolveAll",
+                "./libs/Container/examples/resolveAll/resolveAll.cpp",
+                "-ID:/Users/IsM/Desktop/final/ModuleFramework/libs/Container",
+                "-ID:/Users/IsM/Desktop/final/ModuleFramework/libs/Container/examples/resolveAll/",
+                "-fno-rtti"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

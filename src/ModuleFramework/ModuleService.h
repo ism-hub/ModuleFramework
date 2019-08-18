@@ -1,7 +1,5 @@
-
 #pragma once
 
-//#include <typeinfo>
 #include <map>
 #include "Module.h"
 #include <memory>
@@ -96,8 +94,7 @@ protected:
 		for (auto& kv : typeModuleMap) {
 			hasCycle = hasPathWithCycle(kv.second, 0);
 			if (hasCycle){
-				//TODO: Handle error
-				//Serial.print(F("_______CRITICAL ERROR________: we have a circular dependency "));Serial.println((char*)kv.first);
+				//TODO: Here I can give a more detailed error.
 				return true;
 			}
 		}
@@ -116,7 +113,7 @@ private:
 		for (const auto& typeinf : module.dependencies) {//run the dependencies first
 			startModuleButDependenciesFrist(typeModuleMap[typeinf]);
 		}
-		module.startFn();//calling the startFn
+		module.startFn();
 		module.colored = true;//mark that we started it
 	}
 

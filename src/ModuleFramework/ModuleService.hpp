@@ -1,12 +1,12 @@
 #pragma once
 
 #include <map>
-#include "Module.h"
+#include "Module.hpp"
 #include <memory>
-#include "../../libs/Container/Container.h"
-#include "utils/utils.h"
-#include "utils/templateHelpers.h"
-#include "utils/mfErrors.h"
+#include "../../libs/Container/Container.hpp"
+#include "utils/utils.hpp"
+#include "utils/templateHelpers.hpp"
+#include "utils/mfErrors.hpp"
 
 namespace MF {
 
@@ -26,6 +26,13 @@ public:
 	}
 	 ~ModuleService(){
 		container->unregister<cntnr::Container>();
+	}
+
+	/**
+	 * Returns the container the module-framework uses to share data between modules.
+	 */
+	std::shared_ptr<cntnr::Container> getContainer(){
+		return container;
 	}
 
 	/**

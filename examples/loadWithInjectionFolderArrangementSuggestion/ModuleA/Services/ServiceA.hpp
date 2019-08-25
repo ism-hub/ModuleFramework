@@ -1,9 +1,8 @@
-#ifndef MODULEFRAMEWORK_LOADWITHINJECTIONARRANGMENT_SERVICEA_H_
-#define MODULEFRAMEWORK_LOADWITHINJECTIONARRANGMENT_SERVICEA_H_
+#pragma once
 
 #include <iostream>
-#include "ModuleFramework.h"
-#include <Interfaces/IServiceA.h>
+#include <ModuleFramework.hpp>
+#include "../../Interfaces/IServiceA.hpp"
 
 class ServiceA : public IServiceA {
 public:
@@ -17,5 +16,3 @@ public:
     }
 
 };
-
-#endif

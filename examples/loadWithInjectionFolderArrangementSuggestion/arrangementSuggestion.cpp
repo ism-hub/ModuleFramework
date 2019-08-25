@@ -2,11 +2,11 @@
  * The same idea as the loadWithInjection example but with folder arragment.
  */
 
-#include <ModuleFramework.h>
+#include <ModuleFramework.hpp>
 
 #include <iostream>
 
-#include <config.h>
+#include "config.hpp"
 
 
 using namespace std;
@@ -38,7 +38,7 @@ void printErrorMsg(MF::ErrorCode err){
         cout << "Done loading all modules." << endl;
         break;
     default:
-        cout << "Error accured while loading the modules." << endl;
+        cout << "Error occurred while loading the modules." << endl;
         break;
     }
 }

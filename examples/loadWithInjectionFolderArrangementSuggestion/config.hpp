@@ -1,8 +1,8 @@
 
-#include <ModuleA/ModuleA.h>
-#include <ModuleB/ModuleB.h>
+#include "ModuleA/ModuleA.hpp"
+#include "ModuleB/ModuleB.hpp"
 
-#include<ModuleFramework.h>
+#include<ModuleFramework.hpp>
 
 void configureModulesLoad(MF::ModuleService& mf){
 

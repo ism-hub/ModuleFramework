@@ -2,7 +2,7 @@
 #pragma once
 
 #include <utility>
-#include "../Module.h"
+#include "../Module.hpp"
 
 #include <type_traits>
 

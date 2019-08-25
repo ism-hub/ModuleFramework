@@ -4,13 +4,11 @@
  * In this example you will see the syntax to register and inject ServiceA into ModuleB.
  */
 
-#include <Module.h>
-#include <utils.h>
-#include <ModuleService.h>
+#include <ModuleFramework.hpp>
 
 #include <iostream>
-#include <ModuleA.h>
-#include <ModuleB.h>
+#include "ModuleA.hpp"
+#include "ModuleB.hpp"
 
 using namespace std;
 
@@ -20,7 +18,7 @@ int main(){
 
     moduleFramework.registerModule<ModuleA>();
 
-    moduleFramework.registerModule<ModuleB>()->registerDependenciesTypes<ModuleA>();
+    moduleFramework.registerModule<ModuleB>().registerDependenciesTypes<ModuleA>();
 
     moduleFramework.startAllModules();
 

@@ -1,10 +1,9 @@
-#ifndef MODULEFRAMEWORK_LOADWITHINJECTION_MODULEA_H_
-#define MODULEFRAMEWORK_LOADWITHINJECTION_MODULEA_H_
+#pragma once
 
-#include <Module.h>
+#include <ModuleFramework.hpp>
 #include <iostream>
-#include <Container/Container.h>
-#include <ServiceA.h>
+
+#include "ServiceA.hpp"
 
 class ModuleA  : public MF::ModuleBase {
 public:
@@ -19,5 +18,3 @@ void start(std::shared_ptr<cntnr::Container> container){
 }
 
 };
-
-#endif

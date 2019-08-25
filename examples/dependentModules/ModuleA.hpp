@@ -1,7 +1,6 @@
-#ifndef MODULEFRAMEWORK_DEPENDENTMODULES_MODULEA_H_
-#define MODULEFRAMEWORK_DEPENDENTMODULES_MODULEA_H_
+#pragma once
 
-#include <Module.h>
+#include <ModuleFramework.hpp>
 #include <iostream>
 
 class ModuleA  : public MF::ModuleBase {
@@ -15,5 +14,3 @@ public:
     }
 
 };
-
-#endif

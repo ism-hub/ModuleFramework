@@ -1,7 +1,6 @@
-#ifndef MODULEFRAMEWORK_LOADWITHINJECTION_SERVICEA_H_
-#define MODULEFRAMEWORK_LOADWITHINJECTION_SERVICEA_H_
+#pragma once
 
-#include <Module.h>
+#include <ModuleFramework.hpp>
 #include <iostream>
 
 class ServiceA {
@@ -17,4 +16,3 @@ public:
 
 };
 
-#endif

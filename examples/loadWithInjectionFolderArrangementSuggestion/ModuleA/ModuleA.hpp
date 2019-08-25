@@ -1,11 +1,10 @@
-#ifndef MODULEFRAMEWORK_LOADWITHINJECTIONARRANGMENT_MODULEA_H_
-#define MODULEFRAMEWORK_LOADWITHINJECTIONARRANGMENT_MODULEA_H_
+#pragma once
 
 
 #include <iostream>
-#include <ModuleFramework.h>
-#include <ModuleA/Services/ServiceA.h>
-#include <Interfaces/IServiceA.h>
+#include <ModuleFramework.hpp>
+#include "Services/ServiceA.hpp"
+#include "../interfaces/IServiceA.hpp"
 #include <memory>
 
 class ModuleA  : public MF::ModuleBase {
@@ -22,4 +21,3 @@ void start(std::shared_ptr<cntnr::Container> container){
 
 };
 
-#endif

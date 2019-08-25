@@ -1,10 +1,9 @@
-#ifndef MODULEFRAMEWORK_LOADWITHINJECTION_MODULEB_H_
-#define MODULEFRAMEWORK_LOADWITHINJECTION_MODULEB_H_
+#pragma once
 
-#include <Module.h>
 #include <iostream>
-
-#include <ServiceA.h>
+#include <ModuleFramework.hpp>
+//independent of ModuleB only depends on the interface
+#include "../Interfaces/IServiceA.hpp"
 
 class ModuleB  : public MF::ModuleBase {
 public:
@@ -12,12 +11,10 @@ public:
     ~ModuleB(){}
 
     //The module framework will call this when its turn comes up 
-    void start(std::shared_ptr<ServiceA> serviceA){
+    void start(std::shared_ptr<IServiceA> serviceA){
         std::cout << "Hi I'm ModuleB" << std::endl;
 
         serviceA->SayHello();
-    }
+    } 
 
 };
-
-#endif

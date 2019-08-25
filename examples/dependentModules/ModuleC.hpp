@@ -1,7 +1,6 @@
-#ifndef MODULEFRAMEWORK_DEPENDENTMODULES_MODULEC_H_
-#define MODULEFRAMEWORK_DEPENDENTMODULES_MODULEC_H_
+#pragma once
 
-#include <Module.h>
+#include <ModuleFramework.hpp>
 #include <iostream>
 
 class ModuleC  : public MF::ModuleBase {
@@ -16,4 +15,3 @@ void start(){
 
 };
 
-#endif

@@ -1,12 +1,10 @@
 /**
  * We defiened ModuleA, registered it and told our module framework to load it.
  */
-#include <Module.h>
-#include <utils.h>
-#include <ModuleService.h>
+#include <ModuleFramework.hpp>
 
 #include <iostream>
-#include <ModuleA.h>
+#include "ModuleA.hpp"
 
 using namespace std;
 

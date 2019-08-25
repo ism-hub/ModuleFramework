@@ -1,3 +1,5 @@
+library.json
+
 ##### Windows
 # Windows thumbnail cache files
 Thumbs.db
@@ -294,10 +296,10 @@ tmtags
 
 ##### VisualStudioCode
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+#!.vscode/settings.json
+#!.vscode/tasks.json
+#!.vscode/launch.json
+#!.vscode/extensions.json
 
 ##### NetBeans
 **/nbproject/private/

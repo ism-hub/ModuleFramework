@@ -48,6 +48,18 @@ In order to do that you need to ask for the container and register your service 
 ```
 for more information about the container visit [Container](https://github.com/ism-hub/Container).
 
+### Run
+To actually load your modules with the corresponding config file you need to - 
+```C++
+int main(){
+    MF::ModuleService mf;
+    configuration(mf); //which modules to load and the dependencies 
+    MF::ErrorCode err = mf.startAllModules(); //calling the 'start' methods in the correct order
+    //handle errors here... 
+    return 0;
+}
+```
+
 # Deployment  
 This git contains the [Container](https://github.com/ism-hub/Container) as a submodule, so to clone both of them you can type - 
 ```bash
